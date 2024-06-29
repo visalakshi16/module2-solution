@@ -1,0 +1,64 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+    background-color: #f4f4f4;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 32%;
+        margin: 1%;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        float: left;
+        width: 48%;
+        margin: 1%;
+    }
+
+    .section:nth-child(3) {
+        width: 98%;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .section {
+        width: 98%;
+        margin: 1%;
+        float: none;
+    }
+}
